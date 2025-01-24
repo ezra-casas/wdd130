@@ -1,0 +1,18 @@
+Color Palette:
+    #313638
+    #5E5C45
+    #F09D51
+    #E4E4E0
+https://coolors.co/313638-5e5c45-f09d51-e4e4e0
+
+
+Font:
+HEADING
+Contrail One
+
+TEXT
+Roboto
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Contrail+One&display=swap");
+</style>
