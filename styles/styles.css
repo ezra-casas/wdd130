@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 :root{
     --border: 1px solid #000;
 }
@@ -29,7 +36,9 @@ main {
     padding: 12px;
     max-width: 800px;
 }
-
+main img{
+    float: right;
+}
 aside {
     max-width: 800px;
     margin: 10px;
@@ -38,12 +47,22 @@ aside {
     background-color: darksalmon;
     border-radius: 8px;
     color: black;
+    position: relative;
+
 }
 
 aside img {
     width: 200px;
     height: auto;
 }
+
+aside h2{
+    position: absolute;
+    top: 10%;
+    left: 25px;
+    color: wheat;
+}
+
 p {
     padding: 0;
 }
@@ -53,3 +72,15 @@ footer {
     border-top: 10px;
     text-align: center;
 }
+
+
+/* Class Selectors */
+
+.box{
+    margin: 1rem;
+    border: var(--border);
+    padding: 1rem;
+    background-color: #ffb974;
+    color: #000;
+}
+
