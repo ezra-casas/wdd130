@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1.14rem;
+  color: #fff;
+  background-color: #28292b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+header {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 15px;
+  gap: 1rem;
+}
+
+fieldset {
+  border-radius: 10px;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 12px;
+}
