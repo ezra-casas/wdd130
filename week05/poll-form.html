@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poll Form</title>
+  </head>
+  <header>
+    <h1>WDD 130 | Ezra Casas | Html Form - User Poll</h1>
+  </header>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="fullname">Full Name </label>
+          <input type="text" name="fullname" placeholder="Luke Skywalker" />
+
+          <label for="email">email </label>
+          <input type="email" name="useremail" id="useremail" />
+        </fieldset>
+        <fieldset>
+          <legend>Questions</legend>
+
+          <label for="question-1"> What is your favorite browser? </label>
+          <select name="question-1" id="question-1">
+            <option id="browser" name="browser" value="orion">Orion</option>
+            <option id="browser" name="browser" value="brave">
+              Brave Browser
+            </option>
+            <option id="browser" name="browser" value="zen-browser">
+              Zen Browser
+            </option>
+          </select>
+
+          <label for="question-2">Do you have a household pet? </label>
+          <input type="checkbox" id="pet" name="pet" />
+
+          <label for="question-3">list the places you have lived. </label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            rows="2"
+            placeholder="Japan, Germany, Texas"
+          ></textarea>
+        </fieldset>
+        <button type="submit">Submit Poll</button>
+      </form>
+    </main>
+  </body>
+  <footer></footer>
+</html>
