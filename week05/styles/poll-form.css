@@ -9,11 +9,10 @@ body {
   font-size: 1.14rem;
   color: #fff;
   background-color: #28292b;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  grid-gap: 2rem;
 }
 
 header {
@@ -24,24 +23,80 @@ h1 {
   font-size: 1.25rem;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 form {
-  width: 100%;
   margin: 0;
+  width: 400px;
   display: grid;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   border: 1px solid white;
-  padding: 15px;
-  gap: 1rem;
+  padding: 1rem;
+  gap: 2rem;
 }
 
 fieldset {
   border-radius: 10px;
   display: grid;
-  grid-gap: 2rem;
-  padding: 12px;
+  grid-gap: 1.2rem;
+  padding: 8px;
+}
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+legend {
+  font-size: 1.33rem;
+  text-align: center;
+  padding: 0.33rem;
+}
+
+input,
+select,
+textarea {
+  border-style: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+input,
+select,
+textarea,
+button,
+form {
+  border-radius: 8px;
+}
+button {
+  height: 40px;
+  width: 50%;
+  font-weight: bolder;
+  border-style: none;
+}
+button:hover {
+  background-color: #28292b;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+.column1 {
+  grid-template-columns: 3fr 1fr;
+}
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+form > button {
+  justify-self: center;
 }
