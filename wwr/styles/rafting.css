@@ -13,6 +13,7 @@
 body {
   max-width: 1200px;
   min-width: 800px;
+  padding: 1rem;
 }
 header {
   height: 150px;
@@ -109,6 +110,43 @@ article img {
 strong {
   background-color: transparent;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+fieldset {
+  width: 50%;
+  border: 1px solid black;
+  min-width: 200px;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+address {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+address div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+input {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px #50585c;
+}
 /* class declarations */
 
 .hero {
@@ -118,4 +156,39 @@ strong {
   display: block;
   width: 100%;
   height: auto;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employees {
+  display: grid;
+  grid-gap: 1.2rem;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.person > img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 3px 3px 15px #50585c;
+}
+
+.person-mid {
+  flex-direction: row-reverse;
 }
