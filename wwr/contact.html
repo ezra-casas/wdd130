@@ -11,13 +11,14 @@
       rel="stylesheet"
     />
     <meta
-      description="Site that holds all the info in which a user can contact the owner"
+      name="description"
+      content="Site that holds all the info in which a user can contact the owner"
     />
     <title>Contact</title>
   </head>
   <body>
     <header>
-      <img src="./images/wwr.png" alt="" />
+      <img src="./images/wwr.png" alt="White Water Rafting Logo" />
       <nav>
         <a href="#">Home</a>
         <a href="about.html">About Us</a>
@@ -26,9 +27,9 @@
       </nav>
     </header>
     <main>
-      <div class="employees">
+      <section class="employees">
         <div class="person">
-          <img src="./images/raft_guide_female1.jpg" alt="female 1 employee" />
+          <img src="./images/raft_guide_female1.jpg" alt="Female raft guide" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
             dignissimos iste quisquam ut porro delectus ea ipsam qui itaque
@@ -37,7 +38,7 @@
           </p>
         </div>
         <div class="person">
-          <img src="./images/raft_guide_male1.jpg" alt="#" />
+          <img src="./images/raft_guide_male1.jpg" alt="Male raft guide 1" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
             ad quasi architecto veniam totam vero numquam molestias porro
@@ -46,7 +47,7 @@
           </p>
         </div>
         <div class="person">
-          <img src="./images/raft_guide_male2.jpg" alt="#" />
+          <img src="./images/raft_guide_male2.jpg" alt="Male raft guide 2" />
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
             voluptatum ut consequuntur autem, nostrum nam? Dolor nulla tempore,
@@ -54,9 +55,10 @@
             itaque consectetur dolorem.
           </p>
         </div>
-      </div>
+      </section>
       <form>
         <fieldset>
+          <legend>Contact Information</legend>
           <div>
             <label for="username">Name:</label>
             <input type="text" name="username" id="username" required />
@@ -66,10 +68,10 @@
             <input type="email" name="user-email" id="user-email" required />
           </div>
         </fieldset>
-
         <fieldset>
+          <legend>Message Details</legend>
           <div class="radio-selects">
-            <label for="purpose">What the purpose of the message?</label>
+            <label for="purpose">What is the purpose of the message?</label>
             <div class="radio-item">
               <label for="general-inquiry">General Inquiry</label>
               <input type="radio" name="purpose" id="general-inquiry" />
@@ -85,14 +87,20 @@
           </div>
           <div class="textarea">
             <label for="textarea">Message:</label>
-            <textarea name="message" cols="30" required></textarea>
+            <textarea
+              name="message"
+              id="textarea"
+              cols="30"
+              required
+            ></textarea>
           </div>
         </fieldset>
         <fieldset>
-          <label for="subscribe"
-            >Please subscribe me to the monthly newsletter</label
-          >
-          <input type="checkbox" name="subscribe" />
+          <legend>Subscription</legend>
+          <label for="subscribe">
+            Please subscribe me to the monthly newsletter
+          </label>
+          <input type="checkbox" name="subscribe" id="subscribe" />
         </fieldset>
         <button type="submit">Submit</button>
       </form>
@@ -116,6 +124,7 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          title="Our Location on Google Maps"
         ></iframe>
       </address>
       <div class="bottom">
@@ -123,16 +132,15 @@
           &copy; 2025 White Water Rafting. All rights reserved. Designed with
           care by Ezra.
         </p>
-
         <div class="socials">
           <a href="./contact.html">
-            <img src="./images/mail.png" alt="contact us" />
+            <img src="./images/mail.png" alt="Contact us" />
           </a>
           <a href="https://www.facebook.com">
-            <img src="./images/facebook.png" alt="facebook" />
+            <img src="./images/facebook.png" alt="Facebook" />
           </a>
-          <img src="./images/instagram.png" alt="instagram" />
-          <img src="./images/twitter.png" alt="x.com" />
+          <img src="./images/instagram.png" alt="Instagram" />
+          <img src="./images/twitter.png" alt="Twitter" />
         </div>
       </div>
     </footer>
