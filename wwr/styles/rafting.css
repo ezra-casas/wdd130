@@ -117,6 +117,7 @@ form {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding-top: 2rem;
 }
 
 fieldset {
@@ -127,6 +128,9 @@ fieldset {
   padding: 2rem;
   display: flex;
   justify-content: space-around;
+}
+fieldset:nth-child(2) {
+  flex-direction: column;
 }
 address {
   padding: 1rem;
@@ -139,16 +143,26 @@ address div {
   flex-direction: column;
   gap: 0.4rem;
 }
-input {
+input,
+textarea {
   background-color: var(--secondary);
   color: white;
   border: none;
   padding: 8px;
   border-radius: 8px;
-  box-shadow: 2px 2px 15px #50585c;
+  box-shadow: 2px 2px 15px #606a6f;
+}
+
+textarea {
+  resize: vertical; /* or vertical */
+  max-width: 100%;
 }
 /* class declarations */
 
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
 .hero {
   position: relative;
 }
@@ -189,6 +203,17 @@ input {
   box-shadow: 3px 3px 15px #50585c;
 }
 
-.person-mid {
+.person:nth-child(even) {
   flex-direction: row-reverse;
+}
+.radio-selects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.radio-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
 }
