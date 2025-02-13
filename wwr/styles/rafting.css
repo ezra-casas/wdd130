@@ -167,7 +167,7 @@ address div {
 
 input,
 textarea {
-  background-color: var(--secondary);
+  background-color: #ffffff;
   color: #fff;
   border: none;
   padding: 8px;
