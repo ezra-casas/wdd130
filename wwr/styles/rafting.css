@@ -459,3 +459,35 @@ aside ul li:last-child {
     margin-bottom: 1rem;
     border-radius: var(--br);
 }
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.signup form label {
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.signup input {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: var(--br);
+}
+
+.signup button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent2);
+    border-radius: var(--br);
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background-color: var(--secondary);
+    color: white;
+}
