@@ -417,3 +417,87 @@ aside ul li:last-child {
 .main-contact h1 {
     text-align: center;
 }
+/* Trips Page Additional CSS */
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(216, 214, 214, 0.85);
+    margin: 2rem 20%;
+    border-radius: var(--br);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.cta h1 {
+    color: var(--accent2);
+    margin-bottom: 1rem;
+}
+.cta p {
+    margin-bottom: 1.5rem;
+}
+.cta .btn {
+    background-color: var(--accent1);
+    color: var(--primary);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: var(--br);
+    transition: background-color 0.3s;
+}
+.cta .btn:hover {
+    background-color: var(--accent2);
+}
+
+/* Trip Descriptions Section */
+.trip-descriptions {
+    padding: 2rem 0;
+}
+.trip-descriptions h2 {
+    text-align: center;
+    color: var(--accent2);
+    margin-bottom: 1.5rem;
+}
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 20%;
+}
+.trip {
+    background-color: rgba(216, 214, 214, 0.85);
+    padding: 1rem;
+    border-radius: var(--br);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--br);
+    margin-bottom: 1rem;
+}
+
+/* Trips Table Section */
+.trips-table {
+    padding: 2rem 0;
+    margin: 0 20%;
+}
+.trips-table h2 {
+    text-align: center;
+    color: var(--accent2);
+    margin-bottom: 1rem;
+}
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.trips-table th,
+.trips-table td {
+    padding: 0.75rem;
+    border: 1px solid var(--secondary);
+    text-align: center;
+}
+.trips-table th {
+    background-color: var(--accent1);
+    color: var(--primary);
+}
