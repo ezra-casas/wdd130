@@ -103,70 +103,87 @@ article img {
     height: auto;
     border-radius: var(--br);
 }
+/* Hero Section */
 .hero {
-    position: relative;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    z-index: 0;
-    text-align: center;
-    padding: 3rem 0;
-    background: url("./images/rafting-hero.jpg") no-repeat center/cover;
-    background-size: cover;
-    color: var(--primary);
+  position: relative;
+  height: 500px; /* Adjust as needed */
+  overflow: hidden;
 }
-.hero h1 {
-    position: static;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--accent2);
-    z-index: 2;
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.hero-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: var(--br);
 }
-.hero img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    z-index: -1;
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--accent2);
+  margin-bottom: 1rem;
 }
-.hero .btn {
-    background-color: var(--accent1);
-    color: var(--primary);
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: var(--br);
-    transition: background-color 0.3s;
-    position: relative;
-    overflow: hidden;
+.hero-content p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem;
 }
-.hero .btn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-        circle,
-        rgba(255, 255, 255, 0.5) 20%,
-        transparent 20%
-    );
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
+.hero-content a {
+  font-size: 1.2rem;
+  color: var(--accent2);
+  margin-bottom: 1rem;
 }
-.hero .btn:hover {
-    background-color: var(--accent2);
+.guide-img {
+  width: 150px;
+  border-radius: var(--br);
+  margin-bottom: 1rem;
 }
-.hero .btn:hover::before {
-    animation: watery 0.6s forwards;
+
+/* History Section */
+.history {
+  padding: 2rem 20%;
+  background-color: rgba(216, 214, 214, 0.85);
+  margin: 2rem 0;
+  border-radius: var(--br);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.history h2 {
+  text-align: center;
+  color: var(--accent2);
+  margin-bottom: 1rem;
+}
+
+/* Adventure Gallery */
+.adventure-gallery {
+  padding: 2rem 20%;
+  margin-bottom: 2rem;
+}
+.adventure-gallery h2 {
+  text-align: center;
+  color: var(--accent2);
+  margin-bottom: 1rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--br);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 @keyframes watery {
     0% {
@@ -357,11 +374,52 @@ aside ul li:last-child {
     justify-content: center;
     gap: 2rem;
 }
-.overlay {
-    padding: 0 50px;
-    border-radius: var(--br);
-    background: rgba(216, 214, 214, 1);
+/* Hero Section for hero-home */
+.hero-home {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
 }
+
+.hero-home > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-home .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: var(--br);
+  text-align: center;
+  z-index: 1;
+}
+.hero-home p{
+    color: white;
+}
+
+.hero-home .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent1);
+  color: var(--primary);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--br);
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.hero-home .btn:hover {
+  background-color: var(--accent2);
+}
+
 .grid-offerings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -494,7 +552,6 @@ aside ul li:last-child {
 .trips-table th,
 .trips-table td {
     padding: 0.75rem;
-    border: 1px solid var(--secondary);
     text-align: center;
 }
 .trips-table th {
