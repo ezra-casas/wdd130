@@ -2,46 +2,37 @@
     --primary: #e4e4e0;
     --secondary: #313638;
     --accent1: #5e5c45;
-    --accent2: #956a15;
+    --accent2: #088c03;
     --br: 8px;
     --input-shadow: 2px 2px 15px #606a6f;
     --background-overaly: rgba(216, 214, 214, 1);
 }
-
-/* Global styles */
 * {
     color: var(--secondary);
 }
-
 body {
     max-width: 1200px;
     min-width: 800px;
     padding: 1rem;
 }
-
-/* Navigation */
 nav a {
     padding: 8px 20px;
     border: 1px solid black;
     text-decoration: none;
     color: var(--secondary);
 }
-
 nav a:first-child {
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
-
 nav a:last-child {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-
 nav a:hover {
     background-color: var(--accent1);
     color: var(--primary);
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -50,29 +41,22 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
-/* Typography */
 h1,
 h2,
 h3 {
     font-family: "Contrail One", serif;
 }
-
 h2,
 h3 {
     color: var(--accent1);
 }
-
 h1 {
     margin-bottom: 1rem;
     color: var(--accent2);
 }
-
 p {
     font-family: "Roboto";
 }
-
-/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -81,27 +65,21 @@ footer {
     padding: 1rem 0;
     color: var(--primary);
 }
-
 footer p {
     margin: 0.5rem 0;
 }
-
 footer img,
 footer .socials a img {
     width: 20px;
 }
-
 footer .socials {
     display: flex;
     gap: 1rem;
     margin-top: 0.5rem;
 }
-
 footer .socials a img:hover {
     transform: scale(1.1);
 }
-
-/* Article */
 article {
     position: absolute;
     bottom: 40%;
@@ -112,14 +90,12 @@ article {
     border-radius: var(--br);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 article p {
     margin: 0;
     position: relative;
     z-index: 1;
     background-color: transparent;
 }
-
 article img {
     float: right;
     margin: 0 0 1rem 1rem;
@@ -127,8 +103,6 @@ article img {
     height: auto;
     border-radius: var(--br);
 }
-
-/* Hero Section */
 .hero {
     position: relative;
     height: 400px;
@@ -143,7 +117,6 @@ article img {
     background-size: cover;
     color: var(--primary);
 }
-
 .hero h1 {
     position: static;
     font-size: 3rem;
@@ -151,12 +124,10 @@ article img {
     color: var(--accent2);
     z-index: 2;
 }
-
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
-
 .hero img {
     position: absolute;
     left: 0;
@@ -166,8 +137,6 @@ article img {
     object-fit: cover;
     z-index: -1;
 }
-
-/* Animated button */
 .hero .btn {
     background-color: var(--accent1);
     color: var(--primary);
@@ -178,7 +147,6 @@ article img {
     position: relative;
     overflow: hidden;
 }
-
 .hero .btn::before {
     content: "";
     position: absolute;
@@ -194,15 +162,12 @@ article img {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
 }
-
 .hero .btn:hover {
     background-color: var(--accent2);
 }
-
 .hero .btn:hover::before {
     animation: watery 0.6s forwards;
 }
-
 @keyframes watery {
     0% {
         transform: translate(-50%, -50%) scale(0.5);
@@ -213,8 +178,6 @@ article img {
         opacity: 0;
     }
 }
-
-/* Forms */
 form {
     display: flex;
     flex-direction: column;
@@ -222,7 +185,6 @@ form {
     gap: 1rem;
     padding-top: 2rem;
 }
-
 fieldset {
     width: 50%;
     min-width: 200px;
@@ -232,23 +194,19 @@ fieldset {
     display: flex;
     justify-content: space-around;
 }
-
 fieldset:nth-child(2) {
     flex-direction: column;
 }
-
 address {
     padding: 1rem;
     display: flex;
     justify-content: space-around;
 }
-
 address div {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
-
 input,
 textarea {
     background-color: #ffffff;
@@ -258,12 +216,10 @@ textarea {
     border-radius: var(--br);
     box-shadow: var(--input-shadow);
 }
-
 textarea {
     resize: vertical;
     max-width: 100%;
 }
-
 button[type="submit"] {
     background-color: var(--accent1);
     border: none;
@@ -275,78 +231,64 @@ button[type="submit"] {
     box-shadow: var(--input-shadow);
     transition: transform 0.2s ease;
 }
-
 button[type="submit"]:hover {
     background-color: var(--accent2);
-    color: var(--secondary);
+    color: white;
     box-shadow: none;
     transform: scale(0.95);
 }
-
-/* Utility classes */
 .textarea {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
 }
-
-/* Bottom and socials */
 .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
-
 .socials {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
-/* Employees grid */
 .employees {
     display: grid;
     grid-gap: 1.2rem;
 }
-
 .person {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
-
+.person > p {
+    width: 50%;
+}
 .person > img {
     width: 250px;
     height: auto;
     border-radius: 12px;
     box-shadow: 3px 3px 15px #50585c;
 }
-
 .person:nth-child(even) {
     flex-direction: row-reverse;
 }
-
-/* Radio selects */
 .radio-selects {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 .radio-item {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
 }
-
 .radio-item:last-child {
     padding-bottom: 1rem;
 }
-
-/* Header */
 header {
     display: flex;
     align-items: center;
@@ -354,15 +296,10 @@ header {
     height: 150px;
     width: 100%;
 }
-
 header img {
     height: 100px;
     width: auto;
-    float: left;
-    padding-left: 20%;
 }
-
-/* Info Section */
 .info {
     display: flex;
     flex-wrap: wrap;
@@ -370,7 +307,6 @@ header img {
     justify-content: center;
     padding: 2rem 0;
 }
-
 .info article {
     position: static;
     background-color: var(--background-overaly);
@@ -380,8 +316,6 @@ header img {
     max-width: 45%;
     padding: 20px;
 }
-
-/* Aside */
 aside {
     background-color: var(--background-overaly);
     padding: 1rem;
@@ -389,37 +323,29 @@ aside {
     margin: 2rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 aside h2 {
     color: var(--accent2);
     margin-bottom: 0.5rem;
     text-align: center;
 }
-
 aside ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 aside ul li {
     padding: 0.5rem;
     border-bottom: 1px solid var(--secondary);
 }
-
 aside ul li:last-child {
     border-bottom: none;
 }
-
-/* Home */
 .home {
     border: 1px solid var(--accent2);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-/* Events */
 .events {
     border: 2px solid var(--accent2);
     border-radius: var(--br);
@@ -431,19 +357,17 @@ aside ul li:last-child {
     justify-content: center;
     gap: 2rem;
 }
-
 .overlay {
     padding: 0 50px;
     border-radius: var(--br);
+    background: rgba(216, 214, 214, 1);
 }
-
 .grid-offerings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem 20%;
 }
-
 .grid-offerings .grid-item {
     background-color: rgba(216, 214, 214, 0.85);
     padding: 1rem;
@@ -451,7 +375,6 @@ aside ul li:last-child {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
-
 .grid-offerings .grid-item img {
     width: 200px;
     height: 200px;
@@ -459,7 +382,6 @@ aside ul li:last-child {
     margin-bottom: 1rem;
     border-radius: var(--br);
 }
-
 .signup {
     display: flex;
     flex-direction: column;
@@ -467,27 +389,31 @@ aside ul li:last-child {
     justify-content: center;
     gap: 1rem;
 }
-
 .signup form label {
     font-weight: bold;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-
 .signup input {
     padding: 0.5rem;
     border: 1px solid var(--secondary);
     border-radius: var(--br);
 }
-
 .signup button {
     padding: 0.5rem 1rem;
-    background-color: var(--accent2);
+    background-color: var(--accent1);
     border-radius: var(--br);
     cursor: pointer;
 }
-
 .signup button:hover {
     background-color: var(--secondary);
     color: white;
+}
+.main-contact {
+    border: 2px solid var(--accent2);
+    border-radius: var(--br);
+    width: 100%;
+}
+.main-contact h1 {
+    text-align: center;
 }
