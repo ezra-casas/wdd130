@@ -5,7 +5,7 @@
     --accent2: #956a15;
     --br: 8px; /* Default border radius */
     --input-shadow: 2px 2px 15px #606a6f;
-    --background-overaly: rgba(216, 214, 214, 0.7);
+    --background-overaly: rgba(216, 214, 214, 1);
 }
 
 /* Global styles */
@@ -96,6 +96,10 @@ article img {
 .hero {
     position: relative;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
     z-index: 0;
 }
 
@@ -106,7 +110,6 @@ article img {
     color: var(--accent2);
     font-size: 4rem;
     z-index: 2;
-    background-color: var(--background-overaly)
 }
 
 .hero img {
@@ -306,18 +309,50 @@ nav a:hover {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
+
+/* Animated button */
 .hero .btn {
-    background-color: var(--accent1);
-    color: var(--primary);
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: var(--br);
-    transition: background-color 0.3s;
+  background-color: var(--accent1);
+  color: var(--primary);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--br);
+  transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 20%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
 }
 
 .hero .btn:hover {
-    background-color: var(--accent2);
+  background-color: var(--accent2);
 }
+
+.hero .btn:hover::before {
+  animation: watery 0.6s forwards;
+}
+
+@keyframes watery {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
 
 /* Info Section */
 .info {
@@ -328,7 +363,7 @@ nav a:hover {
     padding: 2rem 0;
 }
 .info article {
-    position: static; /* override absolute positioning */
+    position: static;
     background-color: var(--background-overaly)
     padding: 1rem;
     border-radius: var(--br);
@@ -388,4 +423,8 @@ footer .socials a img {
 }
 footer .socials a img:hover {
     transform: scale(1.1);
+}
+.overlay{
+    padding: 0 50px 0 50px;
+    border-radius: var(--br);
 }
