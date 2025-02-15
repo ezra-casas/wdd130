@@ -1,34 +1,38 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/rafting.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="./styles/rafting.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossorigin="anonymous"
-        />
+        >
         <link
             href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
-        />
-        <meta name="author" content="Ezra Casas" />
+        >
+        <meta name="author" content="Ezra Casas" >
         <meta
             name="description"
             content="Contact page of White Water Rafting"
-        />
+        >
         <title>Contact White Water Rafting</title>
     </head>
     <body>
         <header>
-            <img src="./images/wwr.png" alt="White Water Rafting Logo" />
+            <div class="logo">
+                <img src="./images/wwr.png" alt="White Water Rafting Logo" >
+            </div>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </nav>
         </header>
         <main class="main-contact">
@@ -38,7 +42,7 @@
                     <img
                         src="./images/raft_guide_female1.avif"
                         alt="Female raft guide"
-                    />
+                    >
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Non dignissimos iste quisquam ut porro delectus ea ipsam
@@ -50,7 +54,7 @@
                     <img
                         src="./images/raft_guide_male1.avif"
                         alt="Male raft guide 1"
-                    />
+                    >
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Obcaecati, ad quasi architecto veniam totam vero
@@ -63,7 +67,7 @@
                     <img
                         src="./images/raft_guide_male2.avif"
                         alt="Male raft guide 2"
-                    />
+                    >
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Odit voluptatum ut consequuntur autem, nostrum
@@ -85,7 +89,7 @@
                             name="username"
                             id="username"
                             required
-                        />
+                        >
                     </div>
                     <div>
                         <label for="user-email">E-mail:</label>
@@ -94,7 +98,7 @@
                             name="user-email"
                             id="user-email"
                             required
-                        />
+                        >
                     </div>
                 </fieldset>
                 <fieldset>
@@ -107,7 +111,7 @@
                                 type="radio"
                                 name="purpose"
                                 id="general-inquiry"
-                            />
+                            >
                         </div>
                         <div class="radio-item">
                             <label for="reservation-question"
@@ -117,7 +121,7 @@
                                 type="radio"
                                 name="purpose"
                                 id="reservation-question"
-                            />
+                            >
                         </div>
                         <div class="radio-item">
                             <label for="website-suggestion"
@@ -127,7 +131,7 @@
                                 type="radio"
                                 name="purpose"
                                 id="website-suggestion"
-                            />
+                            >
                         </div>
                     </div>
                     <div class="textarea">
@@ -145,7 +149,7 @@
                     <label for="subscribe">
                         Please subscribe me to the monthly newsletter
                     </label>
-                    <input type="checkbox" name="subscribe" id="subscribe" />
+                    <input type="checkbox" name="subscribe" id="subscribe" >
                 </fieldset>
                 <button type="submit">Send Message</button>
             </form>
@@ -156,11 +160,11 @@
                     <a href="tel:+01-555-555-5555">555-555-5555</a>
                     <a href="mailto:example@example.com">example@example.com</a>
                     <div>
-                        <br />
-                        You may also want to visit us:<br />
-                        White Water Rafting<br />
-                        331 E Evelyn Ave<br />
-                        Mountain View, CA 94041<br />
+                        <br >
+                        You may also want to visit us:<br >
+                        White Water Rafting<br >
+                        331 E Evelyn Ave<br >
+                        Mountain View, CA 94041<br >
                         USA
                     </div>
                 </div>
@@ -173,24 +177,28 @@
                 ></iframe>
             </address>
         </aside>
+
         <footer>
-            <p>
-                &copy; 2025 White Water Rafting. All rights reserved. Designed
-                with care by Ezra.
-            </p>
-            <div class="socials">
-                <a href="https://link.excalidraw.com/l/34cUfZT0RHJ/1tvjcxPjKjN"
-                    >Wireframe</a
-                >
-                <a href="./contact.html">
-                    <img src="./images/mail.png" alt="Contact us" />
-                </a>
-                <a href="https://www.facebook.com">
-                    <img src="./images/facebook.png" alt="Facebook" />
-                </a>
-                <img src="./images/instagram.png" alt="Instagram" />
-                <img src="./images/twitter.png" alt="Twitter" />
-            </div>
-        </footer>
+                    <p>
+                        &copy; 2025 White Water Rafting. All rights reserved. Designed
+                        with care by Ezra.
+                    </p>
+                    <div class="socials">
+                        <a href="https://link.excalidraw.com/l/34cUfZT0RHJ/1tvjcxPjKjN"
+                            >Wireframe</a
+                        >
+                        <a href="contact.html"
+                            ><img src="./images/mail.png" alt="Contact us"
+                        ></a>
+                        <a href="https://www.facebook.com"
+                            ><img src="./images/facebook.png" alt="Facebook"
+                        ></a>
+                        <a href="#"
+                            ><img src="./images/instagram.png" alt="Instagram"
+                        ></a>
+                        <a href="#"><img src="./images/twitter.png" alt="Twitter" ></a>
+                    </div>
+                </footer>
+
     </body>
 </html>
