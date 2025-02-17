@@ -398,6 +398,7 @@ aside ul li:last-child {
     padding: 0.5rem;
     border: 1px solid var(--secondary);
     border-radius: var(--br);
+    color: var(--secondary);
 }
 .signup button {
     padding: 0.5rem 1rem;
